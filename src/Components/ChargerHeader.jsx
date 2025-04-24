@@ -12,7 +12,7 @@ export const ChargerHeader = ({ chargerId, onStateChange, onRemove }) => {
           variant="outlined"
           color="secondary"
           sx={{ ml: 1, minWidth: 40, padding: 0 }}
-          onClick={() => onStateChange(chargerId, 'online')}
+          onClick={() => onStateChange(chargerId, 'Online')}
           title="Turn On"
         >
           <img

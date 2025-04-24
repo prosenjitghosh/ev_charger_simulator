@@ -2,11 +2,11 @@ import React from 'react';
 import { Typography } from '@mui/material';
 
 const stateColors = {
-  offline: 'gray',
-  online: 'blue',
-  charging: 'green',
-  ready:'yellow',
-  fault: 'red',
+  Offline: 'gray',
+  Online: 'blue',
+  Charging: 'green',
+  Ready:'yellow',
+  Fault: 'red',
 };
 
 export const ChargerStateIndicator = ({ state }) => {

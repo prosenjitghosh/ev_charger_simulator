@@ -9,7 +9,6 @@ import {ChargerStateIndicator} from './Components/ChargerStateIndicator';
 import {ChargerControlButtons} from './Components/ChargerControlButtons';
 import { ChargerHeader } from './Components/ChargerHeader';
 
-const STATES = ['offline', 'online', 'charging', 'ready', 'fault'];
 
 const UpdateChargerStateCommand = (chargers, setChargers, chargerId, newState) => {
   //We can add validation here to check if the state transition is valid or not
@@ -34,7 +33,7 @@ function App() {
   }, [chargers]);
 
   const addCharger = () => {
-    const newCharger = { id: nanoid(), state: 'offline' };
+    const newCharger = { id: nanoid(), state: 'Offline' };
     setChargers([...chargers, newCharger]);
   };
 
